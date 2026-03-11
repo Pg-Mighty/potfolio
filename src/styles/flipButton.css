@@ -1,0 +1,104 @@
+/* ═══════════════════════════════════
+   Toggle Switch Button
+   ═══════════════════════════════════ */
+
+.toggle-wrapper {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 50px;
+    background: rgba(15, 15, 30, 0.7);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(124, 131, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* ─── Labels ─── */
+.toggle-label {
+    font-size: 1.15rem;
+    opacity: 0.35;
+    transition: all 0.2s ease;
+    filter: grayscale(80%);
+}
+
+.toggle-label--active {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.15);
+}
+
+/* ─── Switch Track ─── */
+.toggle-switch {
+    position: relative;
+    width: 52px;
+    height: 28px;
+    border-radius: 50px;
+    border: 2px solid rgba(124, 131, 255, 0.3);
+    background: linear-gradient(135deg, #1a1a3e 0%, #0e0e24 100%);
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+.toggle-switch:hover {
+    border-color: rgba(124, 131, 255, 0.6);
+    box-shadow: 0 0 20px rgba(124, 131, 255, 0.15);
+}
+
+.toggle-switch:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* ─── Switch Thumb ─── */
+.toggle-switch__thumb {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7c83ff, #6366f1);
+    box-shadow: 0 2px 8px rgba(124, 131, 255, 0.5);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── ON state (Side B active) ─── */
+.toggle-switch--on {
+    background: linear-gradient(135deg, #1a2e1a 0%, #0e240e 100%);
+    border-color: rgba(0, 228, 54, 0.4);
+}
+
+.toggle-switch--on .toggle-switch__thumb {
+    left: calc(100% - 22px);
+    background: linear-gradient(135deg, #00e436, #00cc30);
+    box-shadow: 0 2px 8px rgba(0, 228, 54, 0.5);
+}
+
+.toggle-switch--on:hover {
+    border-color: rgba(0, 228, 54, 0.6);
+    box-shadow: 0 0 20px rgba(0, 228, 54, 0.15);
+}
+
+/* ─── Retro wrapper variant ─── */
+.toggle-wrapper--retro {
+    border-radius: 0;
+    background: rgba(26, 26, 46, 0.9);
+    border: 2px solid rgba(255, 236, 39, 0.3);
+    backdrop-filter: none;
+    box-shadow:
+        3px 3px 0 0 rgba(255, 236, 39, 0.2);
+}
+
+.toggle-wrapper--retro .toggle-switch {
+    border-radius: 4px;
+}
+
+.toggle-wrapper--retro .toggle-switch__thumb {
+    border-radius: 3px;
+}

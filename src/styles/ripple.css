@@ -1,0 +1,17 @@
+/* ─── Ripple Transition Overlay ─── */
+.ripple-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9990;
+    clip-path: var(--clip-start);
+    transition: clip-path 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.ripple-overlay--expanding {
+    clip-path: var(--clip-end);
+}
