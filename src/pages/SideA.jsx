@@ -81,7 +81,10 @@ export default function SideA() {
                             <div className="a-hero__pfp-ring" />
                             <div className="a-hero__pfp">
                                 <div className="a-hero__pfp-placeholder">
-                                    <span className="a-hero__pfp-initials">SR</span>
+                                    <image>
+                                        <img src="public/profile.jpeg" ></img>
+                                    </image>
+
                                 </div>
                             </div>
                             <div className="a-hero__pfp-status">
