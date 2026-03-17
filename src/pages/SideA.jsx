@@ -82,7 +82,7 @@ export default function SideA() {
                             <div className="a-hero__pfp">
                                 <div className="a-hero__pfp-placeholder">
                                     <image>
-                                        <img src="profile.jpeg" ></img>
+                                        <img src="profile.jpeg" style={{ width: '200%', height: '200%', objectFit: 'cover' }}></img>
                                     </image>
 
                                 </div>
