@@ -82,7 +82,7 @@ export default function SideA() {
                             <div className="a-hero__pfp">
                                 <div className="a-hero__pfp-placeholder">
                                     <image>
-                                        <img src="public/profile.jpeg" ></img>
+                                        <img src="profile.jpeg" ></img>
                                     </image>
 
                                 </div>
