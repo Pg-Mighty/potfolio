@@ -57,7 +57,7 @@ export default function SideA() {
                                 <span className="a-hero__name-line a-hero__name-line--accent">Raikar</span>
                             </h1>
                             <p className="a-hero__title">
-                                3rd Year Computer Engineering Student passionate about{' '}
+                                4th Year Computer Engineering Student passionate about{' '}
                                 <span className="a-hero__highlight">Web3 technologies</span>
                             </p>
                             <div className="a-hero__cta">
