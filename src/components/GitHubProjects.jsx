@@ -88,7 +88,7 @@ export default function GitHubProjects() {
                     rel="noopener noreferrer"
                 >
                     <div className="a-project-card__header">
-                        <span className="a-project-card__icon">  <img src="/Github.png" alt="GitHub Icon" />    </span>
+                        <span className="a-project-card__icon">  <img src="./Github.png" alt="GitHub Icon" />    </span>
                         <div className="a-project-card__links">
                             {repo.homepage && (
                                 <span className="a-project-card__link" title="Live Demo">🔗</span>
