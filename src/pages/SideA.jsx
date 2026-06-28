@@ -6,12 +6,12 @@ const SKILLS = [
     { name: 'Core Java', icon: '☕', level: 85 },
     { name: 'Docker', icon: '🐳', level: 70 },
     { name: 'HTML/CSS', icon: '🎨', level: 90 },
-    { name: 'SQL', icon: '🗃️', level: 75 },
+    { name: 'PostgreSQL', icon: '🐘', level: 75 },
     { name: 'Node JS/TS', icon: '💚', level: 82 },
-    { name: 'C/C++', icon: '⚙️', level: 78 },
-    { name: 'Python', icon: '🐍', level: 80 },
-    { name: 'Backend API', icon: '🔌', level: 85 },
-    { name: 'Web3', icon: '🔗', level: 72 },
+    { name: 'C/C++', icon: '⚙️', level: 65 },
+    { name: 'AWS', icon: '☁️', level: 90 },
+    { name: 'System Design', icon: '🔌', level: 85 },
+    { name: 'Web3(Solidity)', icon: '🔗', level: 72 },
 ];
 
 const AWARDS = [
@@ -28,6 +28,8 @@ const AWARDS = [
         tag: 'Innovation',
     },
 ];
+
+
 
 export default function SideA() {
     return (
@@ -82,7 +84,7 @@ export default function SideA() {
                             <div className="a-hero__pfp">
                                 <div className="a-hero__pfp-placeholder">
                                     <image>
-                                        <img src="profile.jpeg" style={{ width: '200%', height: '200%', objectFit: 'cover' }}></img>
+                                        <img src="https://raw.githubusercontent.com/Pg-Mighty/potfolio/refs/heads/main/public/profile.jpeg" style={{ width: '200%', height: '200%', objectFit: 'cover' }}></img>
                                     </image>
 
                                 </div>
