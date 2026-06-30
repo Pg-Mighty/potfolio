@@ -84,7 +84,7 @@ export default function SideA() {
                             <div className="a-hero__pfp">
                                 <div className="a-hero__pfp-placeholder">
                                     <image>
-                                        <img src="https://raw.githubusercontent.com/Pg-Mighty/potfolio/refs/heads/main/public/profile.jpeg" style={{ width: '200%', height: '200%', objectFit: 'cover' }}></img>
+                                        <img src="potfolio/public/profile.jpeg" style={{ width: '200%', height: '200%', objectFit: 'cover' }} ></img>
                                     </image>
 
                                 </div>
